@@ -36,7 +36,7 @@ To get started, follow these steps:
 2. **Run the Application**: After installing the dependencies, execute the main program:
 
     ```bash
-    python main.py
+    Price_Analysis.py
     ```
 
 ## Usage
