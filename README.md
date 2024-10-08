@@ -1,94 +1,88 @@
-# **Hotel Price and Distance Analyzer**
+# Hotel Price Analysis
 
-A Python-based tool that scrapes hotel data, including price, ratings, and distance to a specified destination, using **BeautifulSoup**, **Pandas**, and **Matplotlib**. It provides an analysis of the top 10 hotels closest to the destination with visual representations of prices and ratings.
+This project scrapes hotel data such as prices, ratings, and distances for a specific destination, and visualizes the data using charts. It helps users make informed decisions when booking hotels by presenting key data in an easily understandable format.
 
----
+## Contents
+- About
+- Setup
+- Usage
+- Visualization Guide
+- Improvements & Future Work
+- Acknowledgments
 
-## **Contents**
-- [About](#about)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Visualization Guide](#visualization-guide)
+## About
 
----
+The **Hotel Price Analysis** tool is designed to fetch hotel details for a given destination and display them in a structured format, enabling easy comparison of hotel prices, ratings, and proximity to the chosen location. The goal is to enhance the user’s ability to choose the best hotel based on their preferences.
 
-## **About**
+The tool scrapes data using `BeautifulSoup` and organizes it into a `pandas` dataframe, which can then be visualized using `matplotlib` charts.
 
-This project is a web scraper and analysis tool for hotel search results from **Booking.com**. It extracts hotel names, prices, ratings, and distances for a specified location and check-in/check-out dates. The data is processed to generate visual insights, helping users compare the top 10 hotels based on price, ratings, and proximity to the destination.
+## Setup
 
-### **Features:**
-- Scrapes hotel details: price, ratings, distance, and names.
-- Filters top hotels based on proximity.
-- Visualizes hotel prices, ratings, and distances using bar and line charts.
-- Provides an easy-to-use command-line interface to input destination and dates.
+To get started, follow these steps:
 
----
+1. **Install Dependencies**: Ensure you have Python installed, then run the following command to install the required libraries:
 
-## **Setup**
-Install dependencies:
+    ```bash
+    pip install -r install_requires.txt
+    ```
 
-Make sure you have Python installed on your machine. Install the required libraries by running:
+   The required libraries include:
+   - `requests`
+   - `beautifulsoup4`
+   - `pandas`
+   - `numpy`
+   - `matplotlib`
 
-bash
-Copy code
-$ pip install -r install_requires.txt
-The required libraries include:
+2. **Run the Application**: After installing the dependencies, execute the main program:
 
-requests
-beautifulsoup4
-pandas
-numpy
-matplotlib
-Run the main script:
+    ```bash
+    python main.py
+    ```
 
-bash
-Copy code
-$ python main.py
-Usage
-Once you have the project set up, follow the instructions below to run the tool:
+## Usage
 
-Input destination and dates:
+Once the program is running, follow these steps to perform a hotel price analysis:
 
-You will be prompted to enter the destination and check-in/check-out dates in the following format:
+1. **Input Destination and Dates**:
+    - You will be prompted to enter the following:
+      - **Destination** (e.g., "Mumbai")
+      - **Check-in date** (e.g., "2024-10-10")
+      - **Check-out date** (e.g., "2024-10-15")
 
-Destination (e.g., "Mumbai")
-Check-in date (e.g., "2024-10-10")
-Check-out date (e.g., "2024-10-15")
-Data extraction and analysis:
+2. **Data Extraction**:
+    - The tool will scrape hotel details for your destination and create a dataframe with the following columns:
+      - Hotel names
+      - Prices
+      - Ratings
+      - Distances from the destination
 
-The tool will fetch hotel details for your destination and create a dataframe with columns for hotel names, prices, ratings, and distances.
+3. **Data Visualization**:
+    - After extracting the data, the tool generates visualizations for easy analysis. The charts show prices, ratings, and distances from the destination center.
 
-Visualizations:
+## Visualization Guide
 
-The program will generate:
+The tool provides the following visualizations based on the extracted data:
 
-A bar chart showing the prices of the top 10 hotels.
-A line plot for ratings on the same graph as prices.
-A second bar chart for the distances of the top 10 hotels.
-Visualization Guide
-Here are the visualizations created from the data:
+1. **Price and Ratings Chart**:
+    - **Blue bars** represent hotel prices.
+    - **Green line** represents hotel ratings.
 
-Price and Ratings Chart:
+2. **Distance Chart**:
+    - **Blue bars** represent the distances of hotels from the destination center.
 
+These visualizations provide a clear comparison between hotel prices, ratings, and distances, helping users make informed decisions.
 
-Blue bars represent hotel prices.
-Green line represents hotel ratings.
-Distance Chart:
+## Improvements & Future Work
 
+1. **Distance Improvements**:  
+   The current distance data relies on proximity to the destination center. Future updates will include more refined location-based sorting and filtering, such as considering nearby landmarks.
 
-Blue bars represent the distances of hotels from the destination.
-Improvements & Future Work
-Distance Improvements: Current distance data relies on proximity to the destination. Future updates will include more refined location-based sorting and filtering.
-Additional Filtering: The project could be expanded to allow filters based on price range or user ratings.
-Acknowledgements
-BeautifulSoup: For providing an excellent tool to scrape HTML content.
-Matplotlib: For creating intuitive visualizations.
-Pandas: For powerful data manipulation.
+2. **Additional Filters**:  
+   Future versions could include the option to filter hotels based on price range, user ratings, or hotel amenities.
 
+## Acknowledgments
 
-Follow the steps below to set up and run the project:
+- **BeautifulSoup**: For providing a robust tool to scrape HTML content.
+- **Matplotlib**: For enabling intuitive visualizations.
+- **Pandas**: For its powerful data manipulation capabilities, making it easy to work with large datasets.
 
-1. **Clone this repository:**
-
-   ```bash
-   $ git clone https://github.com/imavisingh03/Hotel-Price-Distance-Analyzer.git
