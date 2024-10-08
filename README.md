@@ -54,6 +54,8 @@ Once the program is running, follow these steps to perform a hotel price analysi
 
 3. **Data Visualization**:
     - After extracting the data, the tool generates visualizations for easy analysis. The charts show prices, ratings, and distances from the destination center.
+  
+   **Note:** I have attached an example in the images folder; this example is for New Delhi.
 
 ## Visualization Guide
 
