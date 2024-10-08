@@ -20,11 +20,7 @@ The tool scrapes data using `BeautifulSoup` and organizes it into a `pandas` dat
 
 To get started, follow these steps:
 
-1. **Install Dependencies**: Ensure you have Python installed, then run the following command to install the required libraries:
-
-    ```bash
-    pip install -r install_requires.txt
-    ```
+1. **Install Dependencies**: Ensure you have Python installed, then install the required libraries-
 
    The required libraries include:
    - `requests`
